@@ -1,4 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { StackBlitzPayloadOptions } from "~/types/sb";
+
+let ex: StackBlitzPayloadOptions = {
+  github: "bertyn99/sciredev-exercice/tree/main/exo1",
+  openFile: "index.html",
+};
+</script>
 
 <template>
   <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -17,7 +24,7 @@
       optio suscipit!
     </p>
 
-    <ExerciceCanvas />
+    <ExerciceCanvas :exercice="ex" />
   </div>
 </template>
 
